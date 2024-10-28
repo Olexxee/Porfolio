@@ -1,0 +1,46 @@
+img {
+  width: 100%;
+}
+
+header {
+  background: url(../Images/pexels-canvastudio-3194518.jpg) no-repeat center
+    center/cover;
+}
+
+/* CAROUSEL */
+
+.carousel-item {
+  height: 90vh; /* Full height */
+  background: no-repeat center center; /* Center the image */
+  background-size: cover; /* Cover the entire area */
+}
+
+.one {
+  background: url(../Images/pexels-francesco-ungaro-28974077.jpg) no-repeat
+    center center/cover;
+}
+
+.two {
+  background: url(../Images/pexels-tranmautritam-245032.jpg) no-repeat center
+    center/cover;
+}
+
+.three {
+  background: url(../Images/pexels-tranmautritam-245032.jpg) no-repeat center
+    center/cover;
+}
+
+.roundedimg img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.carousel-caption {
+  position: absolute; /* Position the caption */
+  bottom: 30%; /* Position from the bottom */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for centering */
+  color: white; /* Text color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for better visibility */
+}
