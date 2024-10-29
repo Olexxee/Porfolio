@@ -1,10 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 img {
   width: 100%;
 }
 
+/* HEADER */
 header {
   background: url(../Images/pexels-canvastudio-3194518.jpg) no-repeat center
     center/cover;
+  height: 100vh;
+}
+
+header nav {
+  width: 100vw !important;
+  margin: auto;
+  background: #ffff;
+  position: fixed !important;
+  padding: 2rem !important;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+/* WORK-SECTION */
+
+#work .box img {
+  height: 19rem;
+  width: 19rem;
+}
+
+/* ABOUT SECTION */
+
+#about {
+  height: 100vh;
+  padding: 1rem;
+}
+
+#about .row-flex {
+  display: flex;
+  height: 100%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+#about .top-flex {
+  width: 50%;
+}
+
+#about .top-flex .grid-section {
+  display: flex;
+}
+
+#about img {
+  height: 29rem;
+  width: 29em;
 }
 
 /* CAROUSEL */
@@ -13,6 +73,7 @@ header {
   height: 90vh; /* Full height */
   background: no-repeat center center; /* Center the image */
   background-size: cover; /* Cover the entire area */
+  position: relative;
 }
 
 .one {
@@ -38,9 +99,88 @@ header {
 
 .carousel-caption {
   position: absolute; /* Position the caption */
-  bottom: 30%; /* Position from the bottom */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Adjust for centering */
+  bottom: 40%; /* Position from the bottom */
+  inset: 0;
+  top: 40%;
   color: white; /* Text color */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for better visibility */
+}
+
+/* CONTACT-SECTION */
+
+#contact {
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 2rem;
+}
+
+#contact form {
+  border-radius: 20px;
+  /* margin: 0 !important;
+  padding: 0 !important; */
+}
+
+#contact .address {
+  height: 50vh;
+  border-radius: 1.2rem;
+}
+
+@media (max-width: 900px) {
+  #work .box img {
+    width: 100%;
+    height: 15rem;
+  }
+
+  /* MEDIA QUERY FOR ABOUT SECTION */
+
+  #about {
+    height: 50vh;
+  }
+
+  #about h3 {
+    text-align: center;
+  }
+  #about P {
+    font-size: 13px;
+  }
+
+  #about img {
+    height: 17rem;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  /* MEDIA QUERY FOR CONTACT SECTION */
+  #contact .address {
+    height: 40vh;
+  }
+
+  #contact .address p {
+    font-size: 0.7rem;
+  }
+
+  #contact {
+    padding: 1rem;
+  }
+
+  footer {
+    height: 80vh;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  #about {
+    height: 80vh;
+  }
+
+  #about .row-div {
+    width: 100% !important;
+  }
+
+  #contact form {
+    padding: 0.5rem;
+  }
 }
