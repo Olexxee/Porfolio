@@ -118,6 +118,7 @@ header .container {
 
 #contact form {
   border-radius: 20px;
+  padding: 2rem !important;
   /* margin: 0 !important;
   padding: 0 !important; */
 }
@@ -125,6 +126,7 @@ header .container {
 #contact .address {
   height: 50vh;
   border-radius: 1.2rem;
+  padding: 2rem !important;
 }
 
 @media (max-width: 900px) {
@@ -137,7 +139,6 @@ header .container {
 
   #about {
     height: 100vh;
-    display: block;
   }
 
   #about img {
