@@ -22,7 +22,7 @@ header {
 }
 
 header nav {
-  width: 90% !important;
+  width: 100vw !important;
   justify-content: center;
   align-items: center;
   margin: auto;
@@ -123,8 +123,10 @@ header .container {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for better visibility */
 }
 
+/* SOCIALS */
+
 #socials .image {
-  height: 300px;
+  height: 500px;
   width: 100%;
 }
 
@@ -158,6 +160,10 @@ header .container {
 }
 
 @media (max-width: 900px) {
+  body {
+    overflow-x: none;
+  }
+
   header nav {
     width: 100%;
   }
@@ -170,7 +176,7 @@ header .container {
   /* MEDIA QUERY FOR ABOUT SECTION */
 
   #about {
-    height: 100vh;
+    height: max(60vh);
   }
 
   #about img {
@@ -192,7 +198,7 @@ header .container {
   }
 
   #socials {
-    height: 75vh;
+    height: 60vh;
   }
 
   #socials .image {
@@ -202,7 +208,7 @@ header .container {
 
   /* MEDIA QUERY FOR CONTACT SECTION */
   #contact .address {
-    height: 35vh;
+    height: 25vh;
     padding: 0.6rem;
   }
 
@@ -215,24 +221,33 @@ header .container {
     text-align: center !important;
   }
 
+  #socials {
+    height: 50vh;
+  }
+
   #contact .address p {
     font-size: 0.7rem;
   }
 
   #contact {
     padding: 1rem;
-    height: 100vh;
+    height: 65vh;
   }
 
   footer {
-    height: 90vh;
+    height: 60vh;
     padding: 0.5rem;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 400px) {
+  header {
+    height: 60vh;
+    width: 100%;
+  }
+
   #about {
-    height: 100vh;
+    height: 80vh;
   }
 
   #about .row-div {
@@ -241,6 +256,14 @@ header .container {
 
   #contact {
     height: 100vh;
+  }
+
+  #contact .address {
+    height: 30vh;
+  }
+
+  #socials {
+    height: 60vh;
   }
 
   #accordion p {
@@ -256,12 +279,25 @@ header .container {
     width: 100%;
   }
 
-  .footer {
+  footer {
     width: 100%;
     height: 70vh;
     justify-content: center;
     align-items: center;
     margin: auto;
     text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  #about img {
+    height: 10rem;
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  #contact {
+    padding: 1rem;
+    height: 80vh;
   }
 }
