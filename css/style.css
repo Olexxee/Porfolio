@@ -176,7 +176,7 @@ header .container {
   /* MEDIA QUERY FOR ABOUT SECTION */
 
   #about {
-    height: max(60vh);
+    height: max(80vh);
   }
 
   #about img {
@@ -198,7 +198,7 @@ header .container {
   }
 
   #socials {
-    height: 60vh;
+    height: 50vh;
   }
 
   #socials .image {
@@ -221,17 +221,13 @@ header .container {
     text-align: center !important;
   }
 
-  #socials {
-    height: 50vh;
-  }
-
   #contact .address p {
     font-size: 0.7rem;
   }
 
   #contact {
     padding: 1rem;
-    height: 65vh;
+    height: 80vh;
   }
 
   footer {
@@ -247,7 +243,7 @@ header .container {
   }
 
   #about {
-    height: 80vh;
+    height: 100vh;
   }
 
   #about .row-div {
@@ -263,7 +259,7 @@ header .container {
   }
 
   #socials {
-    height: 60vh;
+    height: 70vh;
   }
 
   #accordion p {
@@ -296,8 +292,26 @@ header .container {
     border-radius: 5px;
   }
 
+  #socials {
+    height: 80vh;
+  }
+
   #contact {
     padding: 1rem;
-    height: 80vh;
+    height: 100vh;
+  }
+
+  #contact .address {
+    min-height: 35vh;
+  }
+}
+
+@media (max-width: 300px) {
+  #about {
+    height: 130vh;
+  }
+
+  #section.we-do p {
+    font-size: 0.5rem;
   }
 }
