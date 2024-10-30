@@ -304,6 +304,10 @@ header .container {
   #contact .address {
     min-height: 35vh;
   }
+
+  footer {
+    height: 100vh;
+  }
 }
 
 @media (max-width: 300px) {
