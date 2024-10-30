@@ -79,8 +79,8 @@ header .container {
 }
 
 #about img {
-  height: 29rem;
-  width: 29em;
+  height: 32rem;
+  width: 100%;
 }
 
 /* CAROUSEL */
@@ -179,11 +179,6 @@ header .container {
     height: max(80vh);
   }
 
-  #about img {
-    height: 12rem;
-    width: 100%;
-  }
-
   #about h3 {
     text-align: center;
   }
@@ -192,10 +187,12 @@ header .container {
   }
 
   #about img {
-    height: 17rem;
-    width: 100%;
+    height: 30rem;
+    width: 100% !important;
     margin-top: 1rem;
   }
+
+  /* SOCIALS */
 
   #socials {
     height: 50vh;
@@ -208,7 +205,7 @@ header .container {
 
   /* MEDIA QUERY FOR CONTACT SECTION */
   #contact .address {
-    height: 25vh;
+    height: 40vh;
     padding: 0.6rem;
   }
 
