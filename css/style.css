@@ -235,7 +235,7 @@ header .container {
 
 @media (max-width: 450px) {
   header {
-    height: 60vh;
+    height: 85vh;
     width: 100%;
   }
 
